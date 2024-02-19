@@ -1,0 +1,168 @@
+:root {
+  --color-bg: #f4dbc8;
+  --header-footer: url(../images/floral-header.png);
+  --border: url(../images/floral-border.png);
+  --font-color-dark: #925e66;
+  --font-color-gold: #d4af37;
+  --font-color-light: #ffffff;
+  --font-color-darker: #8f303e;
+  --wallpaper-bg: url(../images/floral-bg.jpg);
+  --wallpaper-bg2: url(../images/floral-bg2.png);
+}
+
+body {
+  background-image: var(--wallpaper-bg);
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--color-bg);
+  position: absolute;
+  width: 60vw;
+  height: 320vh;
+  min-width: 600px;
+  top: 0;
+  bottom: -100px;
+  box-shadow: 0rem 0rem 3rem 1rem var(--font-color-dark);
+}
+
+.card-container {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.25fr;
+  height: 100vh;
+  bottom: 0;
+}
+
+.card-header, .card-footer {
+  background-image: var(--header-footer);
+  background-position: center; 
+  background-repeat: no-repeat;
+
+}
+
+.card-header{
+  height: 100%; 
+  width: 100%;
+}
+
+
+
+.card-body {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr; 
+}
+
+.card-border-left,
+.card-border-right {
+background-image: var(--border);
+background-position: center; 
+background-repeat: repeat-y;
+height: 100%; 
+width: 100%;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Parisienne', cursive;
+  color: var(--font-color-darker);
+  font-size: 4.5vw;
+  font-weight: bold;
+  position: relative;
+  top: -10vw;
+  z-index: 1;
+} 
+
+.card-message {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--font-color-dark);
+  text-align: center;
+  font-size: 0.95vw;
+  font-weight: 300;
+  position: relative;
+  top: -14vw;
+  width: 32vw;
+}
+
+
+.survey {
+  position: absolute;
+  top: 38vh;
+}
+
+
+
+.survey-container {
+  position: relative;
+  margin: 0;
+  z-index: 3;
+}
+
+fieldset {
+  border: 2px solid var(--font-color-light);
+  margin-bottom: 25px;
+  background-image: var(--wallpaper-bg2);
+  background-position: center;
+  background-color: rgba(245, 245, 245, 0.144);
+
+}
+
+.survey-ques {
+  font-family: 'Parisienne';
+  font-weight: bold;
+  font-size: 1.5vw;
+  min-height: 1vw;
+}
+
+.survey-radio {
+  cursor: pointer;
+  padding-left: 2.5vw;
+}
+
+
+.survey-radio:hover {
+  opacity: 0.8;
+}
+
+.survey-submit {
+  cursor: pointer;
+}
+
+.idk {
+  display: none;
+}
+
+.survey-submit {
+  width:10vw;
+  height: 15vh;
+  font-family: "Parisienne";
+  font-weight: bold;
+  color: var(--font-color-gold);
+  -webkit-text-stroke: 0.0001vw var(--font-color-dark);
+  font-size: 2vw;
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/floral-tag3.png);
+  background-size: cover;
+  z-index: 3;
+}
+
+.survey-submit:hover {
+  opacity: 0.8;
+}
+
+.card-footer{
+  height: 50vh; 
+  width: 100%;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0vh;
+  z-index: 2;
+}

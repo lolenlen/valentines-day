@@ -1,0 +1,124 @@
+:root {
+  --color-bg: #f4dbc8;
+  --header-footer: url(../images/floral-header.png);
+  --border: url(../images/floral-border.png);
+  --font-color-dark: #925e66;
+  --font-color-light: #ffffff;
+  --font-color-darker: #8f303e;
+  --wallpaper-bg: url(../images/floral-bg.jpg);
+}
+
+body {
+  background-image: var(--wallpaper-bg);
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--color-bg);
+  position: absolute;
+  width: 60vw;
+  min-width: 600px;
+
+  top: 0;
+  box-shadow: 0rem 0rem 3rem 1rem var(--font-color-dark);
+}
+
+.card-container {
+  display: grid;
+  grid-template-rows: 0.25fr 1fr 0.25fr;
+  height: 100vh;
+}
+
+.card-header, .card-footer {
+  background-image: var(--header-footer);
+  background-position: center; 
+  background-repeat: no-repeat;
+
+
+}
+
+.card-header{
+  height: 100%; 
+  width: 100%;
+}
+
+.card-footer{
+  height: 100%; 
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr; 
+}
+
+.card-border-left,
+.card-border-right {
+background-image: var(--border);
+background-position: center; 
+background-repeat: repeat-y;
+height: 100%; 
+width: 100%;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Parisienne', cursive;
+  color: var(--font-color-darker);
+  font-size: 3.5vw;
+  font-weight: bold;
+  position: relative;
+  top: -5rem;
+  z-index: 1;
+}
+
+  .b-frog, .b-mouse {
+    position: relative;
+    top: -8vh;
+    border: none;
+    height: 25vh;
+    width: 18vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .b-frog {
+    background-image: url(../images/b-frog.png);
+    background-size: 18vw;
+  }
+
+  .b-mouse {
+    background-image: url(../images/b-mouse.png);
+    background-size: 12vw;
+  }
+  
+  form > button:hover {
+    opacity: 0.8;
+  }
+
+  
+
+.card-message {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--font-color-dark);
+  text-align: center;
+  font-size: 0.95vw;
+  font-weight: 300;
+  position: relative;
+  top: -1rem;
+  width: 32vw;
+}
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles-index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's day Review &lt;3</title>
+  <script>
+      function playAudioAndRedirect() {
+      var audio = new Audio('audio/bell.mp3');
+      audio.play();
+      
+      setTimeout(function() {
+        window.location.href = 'login.php';
+      }, 1000); 
+    }
+  </script>
+</head>
+<body>
+  
+<div class="card">
+  <div class="card-container">
+    <div class="card-header"></div>
+      <div class="card-body">
+        <div class="card-border-left"></div>
+        <div class="card-content">
+          <p class="card-title">
+            Happy Valentine's day, Mi amor.
+          </p>
+          <div class="heart-pillow" onclick="playAudioAndRedirect()">
+            <p class="heart-pillow-text"> Love </p>  
+           <img class="heart-pillow-img" src="images/heart-pillow.png">
+        </div>
+          
+          <p class="card-message">
+            <span style="font-style: italic; font-weight: bold;">Ti novio</span> wanted to know all about your first Valentine's dinner together.
+            Did you enjoyed it? Was he a gentleman? Was his gift(s) cute? Did you like the boquet he made? Tell him everything here!
+          </p>
+     
+        </div>
+        <div class="card-border-right"></div>
+      </div>
+    <div class="card-footer"></div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
